@@ -711,6 +711,7 @@ async function openURL(url: string) {
 async function handleSettingBack() {
   showSetting.value = false;
   await getSettings(true);
+  await loadItems();
 }
 
 // 自动清理超过指定天数的历史记录
